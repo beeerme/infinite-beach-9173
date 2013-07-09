@@ -175,6 +175,8 @@ $('body').click(function(e){
 
 // Handle status changes
 function handleStatusChange(response) {
+  alert('handleStatusChange:');
+  alert(response);
   if (response.authResponse) {
     console.log(response);
     window.location.hash = '#menu';

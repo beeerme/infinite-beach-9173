@@ -19,8 +19,7 @@
   <script src="js/jquery.mobile-1.2.0.js"></script>
   <script src="js/mustache.js"></script>
   <script src="js/main.js"></script>
-  <!-- cordova -->
-  <script type="text/javascript" src="cordova.js"></script>
+  <script stype="text/javascript" src="phonegap.js"></script>
   <!-- cordova facebook plugin -->
   <script type="text/javascript" src="cdv-plugin-fb-connect.js"></script>
   <!-- facebook js sdk -->
@@ -28,7 +27,7 @@
   
 	
 </head>
-<body>
+<body onload="onBodyLoad()">
 	<!-- Facebook JavaScript -->
 	<div id="fb-root"></div>
 
@@ -162,9 +161,7 @@
 
     <!-- Facebook JavaScript -->
     <script type="text/javascript">
-         document.addEventListener('deviceready', function() {
-            // window.fbAsyncInit = function() {
-            console.log('document.addEventListener() --------------------------------------')
+       function onDeviceReady() {
               FB.init({
                   appId: '470700906355954',
                   nativeInterface: CDV.FB,
@@ -175,7 +172,12 @@
               });
               FB.Event.subscribe('auth.statusChange', handleStatusChange);
               FB.getLoginStatus(handleStatusChange);
-          });
+            alert('FB.getLoginStatus');
+       }     
+            
+       function onBodyLoad() {
+         document.addEventListener('deviceready', onDeviceReady);
+        }
     </script>
 
 </body>
