@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "344ZS6A6T4.com.littlebluebird.*"
+        id          = "com.phonegap.facebook"
         versionCode = "10"
         version     = "2.9.0">
  
-    <name>FBPlugin 3</name>
+    <name>FBPlugin 4</name>
  
     <description>
         phonegap facebook plugin
