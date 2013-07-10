@@ -15,7 +15,7 @@
         Brent Dunklau
     </author>
     
-    <gap:plugin name="FacebookConnectPlugin">
+    <gap:plugin name="FacebookConnect">
        <param name="APP_ID" value="470700906355954" />
        <param name="APP_NAME" value="Brent1" />
     </gap:plugin>
