@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.littlebluebird.Brent1"
+        id          = "344ZS6A6T4.com.littlebluebird.*"
         versionCode = "10"
-        version     = "1.1.0">
+        version     = "2.9.0">
  
     <name>FBPlugin</name>
  
@@ -14,8 +14,6 @@
     <author href="http://www.littlebluebird.com" email="bdunklau@yahoo.com">
         Brent Dunklau
     </author>
-    
-    <icon src="images/meals/action-eating.png" />
     
     <gap:plugin name="FacebookConnect">
        <param name="APP_ID" value="470700906355954" />
