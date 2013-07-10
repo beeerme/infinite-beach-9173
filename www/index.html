@@ -23,7 +23,7 @@
   <!-- cordova facebook plugin -->
   <script src="cdv-plugin-fb-connect.js"></script>
   <!-- facebook js sdk -->
-  <script src="facebook_js_sdk.js"></script>
+  <script src="facebook-js-sdk.js"></script>
   
 	
 </head>
@@ -162,7 +162,7 @@
     <!-- Facebook JavaScript -->
     <script type="text/javascript">
        function onDeviceReady() {
-            alert('onDeviceReady 5');
+            alert('onDeviceReady 6');
               FB.init({
                   appId: '470700906355954',
                   nativeInterface: CDV.FB,
@@ -176,17 +176,7 @@
               FB.Event.subscribe('auth.statusChange', handleStatusChange);
               FB.getLoginStatus(handleStatusChange);
             alert('FB.getLoginStatus');
-       }   
-       
-       
-      // Load the SDK asynchronously
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/all.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
+       } 
 			     
             
        function onBodyLoad() {
