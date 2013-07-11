@@ -29,7 +29,7 @@
   
 	
 </head>
-<body onload="onBodyLoad()">
+<body>
 	<!-- Facebook JavaScript -->
 	<div id="fb-root"></div>
 
@@ -164,8 +164,6 @@
     <!-- Facebook JavaScript -->
     <script type="text/javascript">			     
             
-       function onBodyLoad() {
-         alert('onBodyLoad');
          document.addEventListener('deviceready', function() {
             alert('deviceready');
               FB.init({
@@ -183,7 +181,7 @@
             alert('FB.getLoginStatus');
           } 
          ); // document.addEventListener
-        }
+
     </script>
 
 </body>
