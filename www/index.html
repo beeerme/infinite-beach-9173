@@ -162,9 +162,12 @@
     
 
     <!-- Facebook JavaScript -->
-    <script type="text/javascript">
-       function onDeviceReady() {
-            alert('onDeviceReady 6');
+    <script type="text/javascript">			     
+            
+       function onBodyLoad() {
+         alert('onBodyLoad');
+         document.addEventListener('deviceready', function() {
+            alert('deviceready');
               FB.init({
                   appId: '470700906355954',
                   nativeInterface: CDV.FB,
@@ -178,12 +181,8 @@
               FB.Event.subscribe('auth.statusChange', handleStatusChange);
               FB.getLoginStatus(handleStatusChange);
             alert('FB.getLoginStatus');
-       } 
-			     
-            
-       function onBodyLoad() {
-            alert('onBodyLoad');
-         document.addEventListener('deviceready', onDeviceReady);
+          } 
+         ); // document.addEventListener
         }
     </script>
 
