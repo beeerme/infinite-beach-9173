@@ -280,7 +280,7 @@ function publishOGAction(response) {
 		params.tags = friendIDArrays.join();
 	}
 	console.log("Publish params " + JSON.stringify(params));
-	FB.api("/me/Brent1:eat",
+	FB.api("/me/brent_one:eat",
     	"POST",
     	params,
     	function (response) {
