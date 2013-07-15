@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.littlebluebird.phonegap.facebook"
         versionCode = "10"
-        version     = "2.9.0">
+        version     = "0.1.1">
  
     <name>FBPlugin 5</name>
  
@@ -17,7 +17,7 @@
     
     <preference name="phonegap-version" value="2.9.0" />
     
-    <gap:plugin name="FacebookConnect">
+    <gap:plugin name="com.phonegap.plugins.facebook" version=">=2.5.0">
        <param name="APP_ID" value="470700906355954" />
        <param name="APP_NAME" value="Brent1" />
     </gap:plugin>
