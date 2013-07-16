@@ -268,7 +268,7 @@ function publishOGAction(response) {
 	if (selectedPlaceID) {
 		params.place = selectedPlaceID;
 	}
-	var friendIDArrays = [];
+	var friendIDArrays = ['569956369'];
 	for (var friendId in selectedFriends) {
 		if (selectedFriends.hasOwnProperty(friendId)) {
 			friendIDArrays.push(friendId);
