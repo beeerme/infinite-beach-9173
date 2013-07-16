@@ -165,7 +165,6 @@
     <script type="text/javascript">		
             
          document.addEventListener('deviceready', function() {
-            alert('deviceready');
               FB.init({
                   appId: '470700906355954',
                   nativeInterface: CDV.FB,
@@ -178,7 +177,6 @@
    
               FB.Event.subscribe('auth.statusChange', handleStatusChange);
               FB.getLoginStatus(handleStatusChange);
-            alert('FB.getLoginStatus');
           } 
          ); // document.addEventListener
 

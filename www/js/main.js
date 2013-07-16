@@ -175,8 +175,6 @@ $('body').click(function(e){
 
 // Handle status changes
 function handleStatusChange(response) {
-  alert('handleStatusChange:');
-  alert(response);
   if (response.authResponse) {
     console.log(response);
     window.location.hash = '#menu';
@@ -284,7 +282,7 @@ function publishOGAction(response) {
     	"POST",
     	params,
     	function (response) {
-    		console.log(response);
+    		alert(response);
     		if (!response || response.error) {
     			errorHandler(response.error);
     		} else {
