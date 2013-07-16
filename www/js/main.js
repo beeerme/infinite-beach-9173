@@ -227,7 +227,7 @@ function handleGenericError(e) {
 }
 
 function handlePublishOGError(e) {
-	console.log("Error publishing ..."+JSON.stringify(e));
+	alert("Error publishing ..."+JSON.stringify(e));
 	var errorCode = e.code;
 	console.log("Error code ..."+errorCode);
 	if (errorCode == "200") {
